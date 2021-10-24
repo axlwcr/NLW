@@ -1,8 +1,8 @@
 const LinksSocialMedia = {
   github: 'axlwcr',
-  youtube: 'https://www.youtube.com/channel/UCLHcdvrEqvrw-qGtmOgc2Zg',
+  youtube: 'channel/UCLHcdvrEqvrw-qGtmOgc2Zg',
   facebook:
-    'https://pt-br.facebook.com/people/Axl-Willyan-Cavalheiro/100004474056720/?comment_id=Y29tbWVudDozMjMyNjU5OTkyOTU1ODNfMzIzMzAyOTc1OTU4NTUy',
+    'people/Axl-Willyan-Cavalheiro/100004474056720/?comment_id=Y29tbWVudDozMjMyNjU5OTkyOTU1ODNfMzIzMzAyOTc1OTU4NTUy',
   instagram: 'axlwcr',
   twitter: 'axlwcr'
 }
@@ -21,7 +21,7 @@ function getGitHubProfileInfos() {
 
   fetch(url)
     .then(response => response.json())
-    .then(data =>{
+    .then(data => {
       userName.textContent = data.name
       userBio.textContent = data.bio
       userLink.href = data.html_url
